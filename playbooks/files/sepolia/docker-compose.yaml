@@ -7,9 +7,6 @@ services:
     restart: unless-stopped
     network_mode: host
     stop_grace_period: 30s
-    depends_on:
-      l1dtl:
-        condition: service_healthy
     healthcheck:
       test: ["CMD-SHELL", "is-l2geth-stalled"]
       interval: 30s
