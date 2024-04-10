@@ -1,5 +1,5 @@
 - name: Install tools
-  hosts: all
+  hosts: localhost
   become: true
   gather_facts: false
   tasks:
